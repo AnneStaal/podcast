@@ -1,1 +1,65 @@
 /*Algemeen*/
+header{
+    background-color: #B5D6E0;
+    margin-bottom: 0.5em;
+}
+
+nav a {
+    display: flex;
+    justify-content: flex-end;
+    border: 0.1em solid;
+    padding: 0.8em;
+    margin: 0em 1em;
+    text-align:end;
+    text-decoration: none;
+    color:rgb(105, 105, 105);
+    transition: all 150ms ease-in;
+}
+a:hover{
+    background-color:rgb(239,224,202);
+    font-weight: 900;
+    text-decoration: underline;
+}
+nav img{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-self: center;
+    margin: 0em 1em;
+}
+nav{
+    display: flex;
+    justify-content: left;
+}
+/* Home-pagina*/
+#home_foto{
+background-color: #B5D6E0;
+}
+
+#home_afleveringen{
+    background-color: #B5D6E0;
+}
+#home_afleveringen ul{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    list-style-type: none;
+}
+#home_comments{
+    background-color: #B5D6E0;
+}
+
+/*Afleveringen-pagina*/
+#afleveringen_laatste_afleveringen{
+    background-color: #B5D6E0;
+}
+
+/* Over-ons-pagina*/
+
+
+/*aflevering-6-pagina*/
+
+
+/* zoek-pagina*/
+
+
