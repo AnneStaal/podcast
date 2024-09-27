@@ -4,9 +4,32 @@ header{
     margin-bottom: 0.5em;
 }
 
-nav a {
+nav { 
+display: flex;
+justify-content: left;
+align-items: center;
+}
+
+nav a img{
+    width: 3em;
+    display: flex;
+    align-self: center;
+    margin: 0em 1em;
+}
+
+nav ul{
     display: flex;
     justify-content: flex-end;
+}
+nav ul li{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+nav ul li a {
+    display: flex;
     border: 0.1em solid;
     padding: 0.8em;
     margin: 0em 1em;
@@ -16,21 +39,16 @@ nav a {
     transition: all 150ms ease-in;
 }
 a:hover{
-    background-color:rgb(239,224,202);
+    background-color:#8cd4ea;
     font-weight: 900;
     text-decoration: underline;
 }
-nav img{
-    width: 45px;
-    height: 45px;
-    display: flex;
-    align-self: center;
-    margin: 0em 1em;
+
+footer img{
+    width: 2em;
 }
-nav{
-    display: flex;
-    justify-content: left;
-}
+
+
 /* Home-pagina*/
 #home_foto{
 background-color: #B5D6E0;
@@ -55,10 +73,34 @@ background-color: #B5D6E0;
 }
 
 /* Over-ons-pagina*/
+#over_ons_hosts{
+    background-color: #B5D6E0;
+}
+
+/* https://www.w3schools.com/howto/howto_css_contact_form.asp */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+    
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+/* https://www.w3schools.com/howto/howto_css_contact_form.asp */
 
 
 /*aflevering-6-pagina*/
-
+#andere_afleveringen{
+    background-color: #B5D6E0;
+}
 
 /* zoek-pagina*/
 
