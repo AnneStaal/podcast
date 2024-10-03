@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Over Ons pagina</title>
 </head>
-<body>
+<body class="algemeen">
     <header>
         <nav> 
             <a href="index.html"><img src="images/logo_podcast.jpg" alt="podcast logo PraatMetMe"></a>
@@ -19,14 +19,17 @@
         </nav>
     </header>    
     <main>
-        <section id="over_ons_foto">
-            <img src="" alt="">
-            <h1>PraatMetMe</h1>
-            <h3>Gooi die Takkie!</h3> 
+        <section class="begin_foto">
+            <img src="images/doodles_podcast.PNG" alt="doodles over relaties, criminaliteit en familie met het PraatMetMe logo">
+            <h1 id="centered_h1_over_ons">PraatMetMe</h1>
+            <h4 id="centered_h3_over_ons">Gooi die Takkie!</h4> 
         </section>
-        <section>
-            <img src="" alt="">
-            <h2>PraatMetMe</h2>
+        <section id="praatmetme_over_ons">
+            <div id="intro_praatmetme_1">
+                <img class="intro_foto_praatmetme" src="images/groepsfoto.jpeg" alt="groepsfoto van de hosts samen">
+            </div>
+            <div id="intro_praatmetme_2">
+                <h2>PraatMetMe</h2>
             <p>PraatMetMe is een podcast die verschillende onderwerpen bespreekt, van gekke verhalen over criminaliteit tot persoonlijke torries (verhalen) zoals familie en relaties. In elke aflevering krijgen luisteraars de keuze om hun eigen verhalen te delen. Die worden besproken door de hosts, waar ze hun mening, tips en advies geven. Of het echt advies is waar je iets aan hebt is maar de vraag. Het is een relaxte en open plek waar je je verhaal kunt delen, maakt niet uit of je een grappige, heftige of moeilijke ervaring hebt meegemaakt. <strong>Gooi die takkie!</strong></p>
             <ul class="linkjes_socials">
                 <li><a href="https://www.facebook.com/"><img src="images/facebook_logo.jpg" alt="Facebook logo in zwart wit"></a></li>
@@ -35,14 +38,16 @@
                 <li><a href="https://www.instagram.com/"><img src="images/instagram_logo.jpg" alt="Instagram logo in zwart wit"></a></li>
                 <li><a href="https://open.spotify.com/"><img src="images/spotify_logo.jpg" alt="Spotify logo in zwart wit"></a></li>
             </ul>
+            </div>
+            
         </section>
 
         <section id="over_ons_hosts">
-            <h3>Hosts</h3>
+            <h2>Hosts</h2>
             <p>3 verschillende hosts, 3 verschillende perspectieven.</p>
             <ul>
-                <li>
-                    <img src="" alt="">
+                <li class="over_ons_host_list">
+                    <img class="hosts_foto" src="images/anne_foto.JPG" alt="foto van host Anne">
                     <h4>Anne</h4>
                     <p>Hey, ik ben Anne, ben 18 jaar en kom uit Den Haag.
                         Mij kun je tegenkomen op het hockeyclub of in de trein richting Amsterdam.
@@ -57,8 +62,8 @@
                         <li><a href="https://open.spotify.com/"><img src="images/spotify_logo.jpg" alt="Spotify logo in zwart wit"></a></li>
                     </ul>
                 </li>
-                <li>
-                    <img src="" alt="">
+                <li class="over_ons_host_list">
+                    <img class="hosts_foto" src="images/kevin_foto.JPG" alt="foto van host Kevin">
                     <h4>Kevin</h4>
                     <p>fakka broski. ik ben kevin, een van de hosts. ik hou me dagelijks bezig met kickbox, gym en kijken hoe ik het ga maken in deze wereld.
                         Ik kom van een zuid-amerikaanse achtergrond. wat heeft dit te maken met mij jou advies geven? helemaal niks.
@@ -72,8 +77,8 @@
                         <li><a href="https://open.spotify.com/"><img src="images/spotify_logo.jpg" alt="Spotify logo in zwart wit"></a></li>
                     </ul>
                 </li>
-                <li>
-                    <img src="" alt="">
+                <li class="over_ons_host_list">
+                    <img class="hosts_foto" src="images/mo_foto.jpeg" alt="foto van host Mo">
                     <h4>Mo</h4>
                     <p>Heyyy y'all! It's the one and only Mootchile! Maar noem me gewoon Mo ;)
                         Ik ben 23 en ik woon in Amsterdam. Ik hou van gamen en ik luister graag naar muziek.
@@ -93,7 +98,7 @@
 
         <!-- https://www.w3schools.com/howto/howto_css_contact_form.asp -->
         <section>
-            <h3>Contact ons</h3>
+            <h2>Contact</h2>
 <div class="container">
   <form action="/action_page.php">
     <label for="fname">Voornaam</label>

@@ -1,5 +1,9 @@
 /*Algemeen*/
 
+.algemeen{
+    margin: 2em;
+    font-family: "Helvetica", sans-serif;
+}
 header{
     background-color: #B5D6E0;
     margin-bottom: 0.5em;
@@ -7,7 +11,7 @@ header{
 
 nav { 
 display: flex;
-justify-content: left;
+justify-content: space-between;
 align-items: center;
 }
 
@@ -44,6 +48,15 @@ a:hover{
     font-weight: 900;
     text-decoration: underline;
 }
+a:focus{
+    background-color:#8cd4ea;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+section{
+    padding:1em;
+}
 
 .linkjes_socials{
     display: flex;
@@ -59,6 +72,11 @@ a:hover{
     width: 1em;
     margin-left: 0.5em;
 }
+
+.thumbnail_foto_vierkant{
+    width: 10em;
+}
+
 /* footer */
 footer img{
     display: flex;
@@ -89,7 +107,7 @@ footer p{
 
 
 /* Home-pagina*/
-#home_foto{
+.begin_foto{
     display: flex;
 }
 #centered_h1{
@@ -117,13 +135,32 @@ footer p{
     left: 35%;
     transform: translate(-50%, -50%);
 }
-#home_foto img{
+@keyframes fadeIn {
+    0%{
+        opacity: 0.05;
+    }
+    100%{
+        opacity: 0.5;
+    }
+}
+.begin_foto img{
     display: flex;
     justify-content: center;
-    width: 93.5em;
+    width: 100%;
+    animation: fadeIn 5s ease-in-out;
     opacity: 50%;
 }
 
+#home_teaser{
+    display: flex;
+    justify-content: space-between;
+}
+
+#home_teaser iframe{ 
+    margin-left: 3em;
+    width:560; 
+    height:315;    
+}
 
 #home_afleveringen{
     background-color: #B5D6E0;
@@ -135,19 +172,117 @@ footer p{
     list-style-type: none;
 }
 
+#home_afleveringen li{
+    background-color: white;
+    border-radius: 10px;
+    padding: 0.5em;
+}
+
+#home_wie_zijn_wij{
+    display: flex;
+    justify-content: space-between;
+}
+
 #home_comments{
     background-color: #B5D6E0;
+}
+#home_comments ul{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    list-style-type: none;
+    padding-bottom: 1em;
+}
+#home_comments li{
+    background-color: white;
+    border-radius: 10px;
+    padding: 0.5em;
+    margin-right: 1em;
+    display: flex;
+    flex-direction: row;
 }
 
 /*Afleveringen-pagina*/
 #afleveringen_laatste_afleveringen{
     background-color: #B5D6E0;
+    padding: 1em;
 }
 
+#afleveringen_teaser iframe{
+    width:560; 
+    height:315;
+}
+
+.play_button{
+    height: 1em;
+}
+#laatste_afleveringen {
+    display: flex;
+    flex-direction: column ;
+}
+
+#laatste_afleveringen li{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    margin: 1em;
+}
+.afleveringen_tekst{
+    padding-left: 2em;
+}
+
+
 /* Over-ons-pagina*/
+
+#centered_h1_over_ons{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}#centered_h3_over_ons{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#praatmetme_over_ons{
+    display: flex;
+    flex-direction: row;
+}
+.intro_foto_praatmetme{
+   width: 20em;
+   margin-right: 1em;
+
+}
+
 #over_ons_hosts{
     background-color: #B5D6E0;
+    padding: 0.5em 1em;
 }
+
+.hosts_foto{
+    width: 6em;
+}
+#over_ons_hosts ul{
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    margin-bottom: 1em;
+
+}
+.over_ons_host_list{
+    margin-right: 2em;
+}
+
+
 
 /* https://www.w3schools.com/howto/howto_css_contact_form.asp */
 input[type=text], select, textarea {
@@ -170,10 +305,48 @@ input[type=text], select, textarea {
 
 
 /*aflevering-6-pagina*/
+#aflevering_6{
+    display: flex;
+    flex-direction: column;
+}
+#play_button_groot{
+    width: 50%;
+    margin-top: 1em;
+}
+#thumbnail_foto_rechthoek{
+    width:60%;
+}
+
 #andere_afleveringen{
     background-color: #B5D6E0;
 }
 
+#andere_afleveringen_lijst{
+    display: flex;
+    flex-direction: column;
+}
+
+#andere_afleveringen_lijst li{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    margin:1em;
+}
+
 /* zoek-pagina*/
+#zoeken_input_foto{
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
 
-
+#zoeken_input_foto img{
+    display: flex;
+    width: 15em;
+}
+#zoeken_input_foto input{
+    height: 3em;
+    width: 75%;
+}

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Zoek pagina</title>
 </head>
-<body>
+<body class="algemeen">
     <header>
         <nav> 
             <a href="index.html"><img src="images/logo_podcast.jpg" alt="podcast logo PraatMetMe"></a>
@@ -18,22 +18,26 @@
             </ul>
         </nav>
     </header>    
-    <main>
+    <main class="zoeken">
         <h1>Zoeken</h1>
-        <!-- https://www.w3schools.com/howto/howto_css_searchbar.asp -->
-        <input type="text" placeholder="Search..">
-        <!-- https://www.w3schools.com/howto/howto_css_searchbar.asp -->
-        <img src="" alt="">
-        <p>
-            Waar ben je naar op zoek?<br>
-            <strong>Meest gezochte zoekopdrachten</strong>
-        </p>
-        <ul>
-            <li><a href="over-ons.html">Hosts</a></li>
-            <li><a href="over-ons.html">Bericht sturen</a></li>
-            <li><a href="afleveringen.html">Laatste afleveringen</a></li>
-
-        </ul>
+        <div id="zoeken_input_foto">
+            <!-- https://www.w3schools.com/howto/howto_css_searchbar.asp -->
+            <input type="text" placeholder="Search..">
+            <!-- https://www.w3schools.com/howto/howto_css_searchbar.asp -->
+            <img id="zoeken_foto" src="images/logo_podcast.jpg" alt="podcast PraatMetMe logo">
+        </div>
+        <section id="zoeken_tekst">
+            <p>
+                Waar ben je naar op zoek?<br>
+                <strong>Meest gezochte zoekopdrachten</strong>
+            </p>
+            <ul>
+                <li><a href="over-ons.html">Hosts</a></li>
+                <li><a href="over-ons.html">Bericht sturen</a></li>
+                <li><a href="afleveringen.html">Laatste afleveringen</a></li>
+    
+            </ul>
+        </section>
     </main>
 
     <footer>

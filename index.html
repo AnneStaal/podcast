@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Home pagina</title>
 </head>
-<body>
+<body class="algemeen">
     <header>
         <nav> 
             <a href="index.html"><img src="images/logo_podcast.jpg" alt="podcast logo PraatMetMe"></a>
@@ -19,7 +19,7 @@
         </nav>
     </header>    
     <main>
-        <section id="home_foto">
+        <section class="begin_foto">
             <img src="images/intro_foto_2.0.jpg" alt="doodles over relaties, criminaliteit en familie met het PraatMetMe logo">
             <h1 id="centered_h1">PraatMetMe</h1>
             <h4 id="centered_h3">Gooi die Takkie!</h4> 
@@ -29,27 +29,31 @@
         <section>
             <h2>PraatMetMe</h2>
             <hr>
-            <p>Wij zijn PraatMetMe de podcast. In de podcast worden verschillende onderwerpen besproken, van gekke verhalen over criminaliteit tot persoonlijke torries (verhalen). Elke aflevering staat een ander Torrie centraal. Je krijgt van 3 verschillende hosts, 3 verschillende perspectieven. Of het advies echt nuttig is, is maar de vraag. Of je erg echt iets mee doet is aan jou. PraatMetMe is een relaxte en open plek waar je je verhaal kunt delen, maakt niet uit of je een grappige, heftige of moeilijke ervaring hebt meegemaakt.<strong>Gooi die takkie!</strong><br>
-                <br>
-                Nieuwsgierig? Wil je weten of deze podcast iets voor jou is? Dan is hier vast een intro voor je.</p>
-            <link>
+            <div id="home_teaser">
+                <p>Wij zijn PraatMetMe de podcast. In de podcast worden verschillende onderwerpen besproken, van gekke verhalen over criminaliteit tot persoonlijke torries (verhalen). Elke aflevering staat een ander Torrie centraal. Je krijgt van 3 verschillende hosts, 3 verschillende perspectieven. Of het advies echt nuttig is, is maar de vraag. Of je erg echt iets mee doet is aan jou. PraatMetMe is een relaxte en open plek waar je je verhaal kunt delen, maakt niet uit of je een grappige, heftige of moeilijke ervaring hebt meegemaakt.<strong>Gooi die takkie!</strong><br>
+                    <br>
+                    Nieuwsgierig? Wil je weten of deze podcast iets voor jou is? Dan is hier vast een intro voor je.
+                </p>
+                <iframe src="https://www.youtube.com/embed/3x1ngAD19IM?si=Wm207jWSKL1xCCkm" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </section>
 
         <section id="home_afleveringen">
             <h2>Afleveringen</h2>
             <hr>
             <ul>
-                <li><img src="" alt="">
+                <li><img class="thumbnail_foto_vierkant" src="images/thumbnail_vierkant.jpeg" alt="thumbnail vierkant met foto van de 3 hosts">
                     <p><strong>S1E06</strong><br>
                         "Hij ging er vandoor met mijn beste vriendin omdat..."
                     </p>
                 </li>
-                <li><img src="" alt="">
+                <li><img class="thumbnail_foto_vierkant" src="images/thumbnail_vierkant.jpeg" alt="thumbnail vierkant met foto van de 3 hosts">
                     <p><strong>S1E05</strong> <br>
-                        "op mijn 15e was ik bijna overtuigd om in mijn eigen huis te beroven"| PraatMetMe featuring Specs Gonzalez
+                        "Op mijn 15e was ik bijna overtuigd om in mijn eigen huis te beroven"<br>
+                        | PraatMetMe featuring Specs Gonzalez
                     </p>
                 </li>
-                <li><img src="" alt="">
+                <li><img class="thumbnail_foto_vierkant" src="images/thumbnail_vierkant.jpeg" alt="thumbnail vierkant met foto van de 3 hosts">
                     <p><strong>S1E04</strong> <br>
                         "Ik ben eindelijk gestopt met coke, maar ik voel me niet beter!"
                     </p>
@@ -57,28 +61,61 @@
             </ul>
         </section>
 
-        <section id="home_wie_linkjes">
-            <h2>Wie zijn wij?</h2>
-            <p>Wil je weten wie de hosts zijn? Kijk dan hier.</p>
-            <button><a href="over-ons.html">meer info ...</a></button>
-            <img src="" alt="">
+        <section id="home_wie_zijn_wij">
+            <div>
+                <h2>Wie zijn wij?</h2>
+                <p>Wil je weten wie de hosts zijn? Kijk dan hier.</p>
+                <button><a href="over-ons.html">meer info ...</a></button>
 
-            <h2>Linkjes</h2>
-            <ul class="linkjes_socials">
-                <li><a href="https://www.facebook.com/"><img src="images/facebook_logo.jpg" alt="Facebook logo in zwart wit"></a></li>
-                <li><a href="https://www.tiktok.com/"><img src="images/tiktok_logo.jpg" alt="Tiktok logo in zwart wit"></a></li>
-                <li><a href="https://www.youtube.com/"><img src="images/youtube_logo.jpg" alt="Youtube logo in zwart wit"></a></li>
-                <li><a href="https://www.instagram.com/"><img src="images/instagram_logo.jpg" alt="Instagram logo in zwart wit"></a></li>
-                <li><a href="https://open.spotify.com/"><img src="images/spotify_logo.jpg" alt="Spotify logo in zwart wit"></a></li>
-            </ul>
+                <h2>Linkjes</h2>
+                <ul class="linkjes_socials">
+                    <li><a href="https://www.facebook.com/"><img src="images/facebook_logo.jpg" alt="Facebook logo in zwart wit"></a></li>
+                    <li><a href="https://www.tiktok.com/"><img src="images/tiktok_logo.jpg" alt="Tiktok logo in zwart wit"></a></li>
+                    <li><a href="https://www.youtube.com/"><img src="images/youtube_logo.jpg" alt="Youtube logo in zwart wit"></a></li>
+                    <li><a href="https://www.instagram.com/"><img src="images/instagram_logo.jpg" alt="Instagram logo in zwart wit"></a></li>
+                    <li><a href="https://open.spotify.com/"><img src="images/spotify_logo.jpg" alt="Spotify logo in zwart wit"></a></li>
+                </ul>
+            </div>
+            <div>
+                <img class="intro_foto_praatmetme" src="images/groepsfoto.jpeg" alt="groepsfoto van de hosts samen">
+            </div>
+            
         </section>
 
         <section id="home_comments">
             <h2>Comments</h2>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+            <hr>
+            <ul id="home_comments_lijst">
+                <li>
+                    <div>
+                        <img src="images/profielfoto_comments.png" alt="een profielfoto van de comments">
+                    </div>
+                    <div class="afleveringen_tekst">
+                        <p><strong>Anoniem</strong><br>
+                            "Specs was geweldig! Bizar verhaal en nog harder gelachen."
+                        </p>    
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/profielfoto_comments.png" alt="een profielfoto van de comments">
+                    </div>
+                    <div class="afleveringen_tekst">
+                        <p><strong>Confession_crew</strong> <br>
+                            "Dat verhaal over verraad tussen vrienden... ik voelde die pijn."
+                        </p>    
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/profielfoto_comments.png" alt="een profielfoto van de comments">
+                    </div>
+                    <div class="afleveringen_tekst">
+                        <p><strong>Lisa</strong> <br>
+                            "Vriendin zoenen op dat feest... drama, maar top advies!"
+                        </p>    
+                    </div>
+                </li>
             </ul>
         </section>
     </main>
